@@ -1,0 +1,15 @@
+<template name="goalsList">    
+    <form class="goalsList">
+		<h2>Create a new goal:</h2>
+		<input type="text" name="my_text" placeholder="New goal">
+		<input type="submit" value="Submit">
+	</form>
+	<h2>List of your goals:</h2>
+
+		{{#each goalsOption}}
+				{{> goal}}
+				<br>
+		{{else}} No goal.
+		{{/each}}
+
+</template>

@@ -1,0 +1,24 @@
+<head>
+  <title>goals</title>
+</head>
+
+<body>
+
+</body>
+
+<template name="bodyLayout">
+  	<h1> Welcome to skarrakc-goals</h1>
+    
+	{{> Template.dynamic template=main}}
+	<!--	{{> accueil}}-->
+
+</template>
+
+<template name="accueil">
+	{{#if currentUser}}
+		{{> goalsList}}
+	{{else}}
+		 <p>You must log in to see your goals.</p>
+	{{/if}}
+    
+</template>
